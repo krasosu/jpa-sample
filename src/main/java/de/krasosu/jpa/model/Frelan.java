@@ -12,13 +12,10 @@ import java.util.List;
 @Entity
 public class Frelan extends BaseEntity {
 
-/*    @OneToMany(mappedBy = "frelan",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "FRELAN_ID")
     @JsonIgnore
-    private List<Evani> evani;*/
+    private List<Evani> evani;
 
-    @OneToOne(orphanRemoval = true, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @MapsId
-    @JoinColumn(name = "EVANI_ID")
-    @JsonIgnore
-    private Evani evani;
+
 }

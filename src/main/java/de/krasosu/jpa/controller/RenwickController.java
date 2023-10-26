@@ -29,20 +29,19 @@ public class RenwickController {
     @ResponseBody
     public Renwick createRenwickSample() {
 
-        Frelan frelan1 = new Frelan();
-        frelan1.setData("14400");
-        Frelan frelan2 = new Frelan();
-        frelan2.setData("29900");
-
         Evani evani1 = new Evani();
         evani1.setData("dolor sit amet");
-        evani1.setFrelan(frelan1);
         Evani evani2 = new Evani();
         evani2.setData("sadipscing elitr");
-        evani2.setFrelan(frelan1);
         Evani evani3 = new Evani();
         evani3.setData("eirmod tempor invidunt");
-        evani3.setFrelan(frelan2);
+
+        Frelan frelan1 = new Frelan();
+        frelan1.setData("14400");
+        frelan1.setEvani(List.of(evani1,evani2));
+        Frelan frelan2 = new Frelan();
+        frelan2.setData("29900");
+        frelan2.setEvani(List.of(evani3));
 
         Intira intira = new Intira();
         intira.setData("lorem ipsum intira 1");

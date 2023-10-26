@@ -9,7 +9,6 @@ import lombok.EqualsAndHashCode;
 @Entity
 public class Evani extends BaseEntity {
 
-    @OneToOne(mappedBy = "evani", cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
-    private Frelan frelan;
+ /*   @OneToOne( cascade = CascadeType.ALL, mappedBy = "evani.id")
+    private Frelan frelan;*/
 }
