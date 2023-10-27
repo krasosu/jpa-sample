@@ -8,7 +8,4 @@ import lombok.EqualsAndHashCode;
 @Data
 @Entity
 public class Evani extends BaseEntity {
-
- /*   @OneToOne( cascade = CascadeType.ALL, mappedBy = "evani.id")
-    private Frelan frelan;*/
 }

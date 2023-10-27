@@ -14,8 +14,5 @@ public class Frelan extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "FRELAN_ID")
-    @JsonIgnore
     private List<Evani> evani;
-
-
 }
