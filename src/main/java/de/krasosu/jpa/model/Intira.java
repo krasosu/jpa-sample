@@ -16,11 +16,11 @@ public class Intira extends BaseEntity {
     @JsonIgnore
     private Renwick renwick;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "INTIRA_ID")
     private List<Frelan> frelans;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "INTIRA_ID")
     private List<Evani> evanis;
 }

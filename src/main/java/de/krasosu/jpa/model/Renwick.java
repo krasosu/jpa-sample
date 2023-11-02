@@ -12,7 +12,11 @@ import java.util.List;
 @Entity
 public class Renwick extends BaseEntity {
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "RENWICK_ID")
     private List<Intira> intiras;
+
+    @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JoinColumn(name = "RENWICK_ID")
+    private List<Disnov> disnovs;
 }

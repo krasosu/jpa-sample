@@ -1,0 +1,58 @@
+{
+  "id" : 1,
+  "data" : "lorem ipsum",
+  "intiras" : [ {
+    "id" : 1,
+    "data" : "lorem ipsum intira 1",
+    "frelans" : [ {
+      "id" : 1,
+      "data" : "14400",
+      "evani" : [ {
+        "id" : 1,
+        "data" : "dolor sit amet",
+        "disnovs" : [ {
+          "id" : 1,
+          "data" : "Isiro arus aed"
+        } ]
+      }, {
+        "id" : 2,
+        "data" : "sadipscing elitr",
+        "disnovs" : [ {
+          "id" : 1,
+          "data" : "Isiro arus aed"
+        } ]
+      } ]
+    }, {
+      "id" : 2,
+      "data" : "29900",
+      "evani" : [ {
+        "id" : 3,
+        "data" : "eirmod tempor invidunt",
+        "disnovs" : null
+      } ]
+    } ],
+    "evanis" : [ {
+      "id" : 1,
+      "data" : "dolor sit amet",
+      "disnovs" : [ {
+        "id" : 1,
+        "data" : "Isiro arus aed"
+      } ]
+    }, {
+      "id" : 2,
+      "data" : "sadipscing elitr",
+      "disnovs" : [ {
+        "id" : 1,
+        "data" : "Isiro arus aed"
+      } ]
+    }, {
+      "id" : 3,
+      "data" : "eirmod tempor invidunt",
+      "disnovs" : null
+    } ]
+  } ],
+  "disnovs" : [ {
+    "id" : 1,
+    "data" : "Isiro arus aed"
+  } ]
+}

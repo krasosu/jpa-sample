@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 public class Frelan extends BaseEntity {
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = {CascadeType.PERSIST,  CascadeType.REMOVE}, fetch = FetchType.LAZY)
     @JoinColumn(name = "FRELAN_ID")
     private List<Evani> evani;
 }

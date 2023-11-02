@@ -1,9 +1,6 @@
 package de.krasosu.jpa.controller;
 
-import de.krasosu.jpa.model.Evani;
-import de.krasosu.jpa.model.Frelan;
-import de.krasosu.jpa.model.Intira;
-import de.krasosu.jpa.model.Renwick;
+import de.krasosu.jpa.model.*;
 import de.krasosu.jpa.service.RenwickService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -48,9 +45,16 @@ public class RenwickController {
         intira.setFrelans(List.of(frelan1, frelan2));
         intira.setEvanis(List.of(evani1, evani2, evani3));
 
+        Disnov disnov = new Disnov();
+        disnov.setData("Isiro arus aed");
+
+        evani1.setDisnovs(List.of(disnov));
+        evani2.setDisnovs(List.of(disnov));
+
         Renwick renwick = new Renwick();
         renwick.setData("lorem ipsum");
         renwick.setIntiras(List.of(intira));
+        renwick.setDisnovs(List.of(disnov));
 
         return this.renwickService.saveRenwick(renwick);
     }
